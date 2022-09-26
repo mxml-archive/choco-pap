@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@font-face {
+    font-family: "droidserif";
+    src: url(../asset/font/droid-serif.regular.ttf)
+}
+:root{
+    --white: #ffffff;
+    --bleu: #55C0CF;
+    --marron: #2C1E1E;
+    --marronfoncer: #1F1615;
+    --orange: #B65F28;
+    --jaune: #FFD543;
+}
