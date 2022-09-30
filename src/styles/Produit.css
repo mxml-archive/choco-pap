@@ -1,0 +1,18 @@
+#divProduit{
+    background-color: var(--orange);
+    color: var(--marron);
+}
+#inputNumber{
+    height: 40px;
+    border: none;
+}
+#btnProduit{
+    background-color: var(--jaune);
+    border: 2px, solid, var(--jaune);
+    transition: 0.5s;
+    height: 40px;
+    color: var(--orange);
+}
+#btnProduit:hover{
+    transform: scale(1.05);
+}

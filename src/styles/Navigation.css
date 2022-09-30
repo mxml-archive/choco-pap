@@ -1,0 +1,28 @@
+.lien{
+    color: var(--orange);
+    font-family: Fjalla One, Arial;
+    font-size: 1.2em;
+    text-decoration: none;
+    list-style: none;
+}
+.lien:hover{
+    color: var(--jaune);
+}
+.panier{
+    width: 40px;
+}
+.btnPanier{
+    background-color: var(--jaune);
+    color: var(--orange);
+    border: none;
+    transition: 0.5s;
+    font-family: droidserif, arial;
+}
+.btnPanier:hover{
+    transform: scale(1.03);
+}
+.btnClose:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+    cursor: pointer;
+}

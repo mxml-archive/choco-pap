@@ -3,6 +3,7 @@
     font-family: "droidserif";
     src: url(../asset/font/droid-serif.regular.ttf)
 }
+
 :root{
     --white: #ffffff;
     --bleu: #55C0CF;
@@ -10,4 +11,10 @@
     --marronfoncer: #1F1615;
     --orange: #B65F28;
     --jaune: #FFD543;
+}
+h1, h2, h3, button{
+    font-family: 'Fjalla One', arial;
+}
+p, span{
+    font-family: droidserif, Aria;
 }

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+.imgFlou {
+    filter: opacity(0.8);
+    transition-property: -webkit-filter;
+    transition-duration: .7s;
+    }
+.imgFlou:hover, .imgFlou:focus {
+    filter: opacity(1);
+    }
+#btnCaroussel{
+    z-index: 1;
+    color: var(--orange);
+    width: 250px;
+    font-family: Fjalla One, Arial;
+    border: 1px solid var(--orange);
+    background-color: var(--jaune);
+    filter: opacity(0.9);
+    transition: 0.5s;
+}
+#btnCaroussel:hover, #btnCaroussel:focus {
+    filter: opacity(1);
+    transform: scale(1.04);
+}
