@@ -4,21 +4,36 @@ import Card from './Card';
 import '../styles/Liste.css'
 
 const Liste = () => {
+
+    // var pour la data provenant du useEffect
     const[data, setData] = useState([]);
+    // var pour les input de type radio
     const[selectedRadio,setSelectedRadio] = useState();
+    // var pour les label des input de type radio
     const radios = ["blanc", "lait", "noir", "noix", "fruit", "caramel", "liqueur"]
+    // var pour l'input de type range Prix
     const[rangeValue, setRangeValue] = useState(20);
+    // var pour l'input de type range Notes
     const[rangeValueNote, setRangeValueNote] = useState(5)
 
+    // hook pour récupérer la data provenant du fichier JSON dans le dossier src/json
     useEffect(()=>{
         setData(JsonData)
     },[])
 
     return (
         <div className='container-fluid mx-0 row px-0 content'>
+
+
+            {/* ttitre de la page */}
+
             <div className='text-center py-4 content'>
                 <h1>BOUTIQUE</h1>
             </div>
+
+
+            {/* realisation de la barre aside à droite, pour les filtres */}
+
             <div className='col-12 col-md-3 col-lg-2 pt-2 content'>
                 <aside className='aside rounded p-3'>
                     <div>
@@ -55,6 +70,10 @@ const Liste = () => {
                     </div>
                 </aside>
             </div>
+
+
+            {/* realisation de la liste des produits */}
+
             <ul className='list-unstyled col-12 col-md-8 col-lg-9 row mx-auto justify-content-between'>
                 {data.filter((produit) => produit.price<=rangeValue)
                     .filter((produit) => produit.note<=rangeValueNote)
